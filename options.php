@@ -102,6 +102,20 @@
                     </label>
                 </td>
             </tr> 
+            <tr valign="top">
+                <th scope="row"><label for="webwinkelkeur-javascript"><?php _e('Estrellas Rich Snippet'); ?></label></th>
+                <td>
+                    <label>
+                        <input type="checkbox" id="webwinkelkeur-rich-snippet" name="webwinkelkeur_rich_snippet" value="1" <?php if($config['rich_snippet']) echo 'checked'; ?> />
+                        <?php _e('Sí, añade un Rich Snippet al footer.'); ?>
+                    </label>
+                    <p class="description">
+                        Así Google podrá mostrar tu puntuación en los resultados de búsqueda.
+                        Uso bajo su propia responsabilidad.
+                        <a target="_blank" href="https://support.google.com/webmasters/answer/99170?hl=es">Más información.</a>
+                    </p>
+                </td>
+            </tr> 
         </table>
         <?php submit_button(); ?>
     </div>
